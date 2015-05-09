@@ -1,0 +1,92 @@
+[
+  {
+    "startDate": "Wed May  6 00:00:00 2015", 
+    "giftType": 1, 
+    "_id": 1, 
+    "endDate": "Tue May 12 00:00:00 2015", 
+    "logicId#[]": [
+      1, 
+      2, 
+      3, 
+      4, 
+      5, 
+      6, 
+      7
+    ]
+  }, 
+  {
+    "startDate": "Wed May 13 00:00:00 2015", 
+    "giftType": 1, 
+    "_id": 2, 
+    "endDate": "Tue May 19 00:00:00 2015", 
+    "logicId#[]": [
+      8, 
+      9, 
+      10, 
+      11, 
+      12, 
+      13, 
+      14
+    ]
+  }, 
+  {
+    "startDate": "Wed May  6 00:00:00 2015", 
+    "giftType": 2, 
+    "_id": 3, 
+    "endDate": "Tue May 12 00:00:00 2015", 
+    "logicId#[]": [
+      15, 
+      16, 
+      17, 
+      18, 
+      19, 
+      20, 
+      21
+    ]
+  }, 
+  {
+    "startDate": "Wed May 13 00:00:00 2015", 
+    "giftType": 2, 
+    "_id": 4, 
+    "endDate": "Tue May 19 00:00:00 2015", 
+    "logicId#[]": [
+      22, 
+      23, 
+      24, 
+      25, 
+      26, 
+      27, 
+      28
+    ]
+  }, 
+  {
+    "startDate": "Wed Apr 29 00:00:00 2015", 
+    "giftType": 1, 
+    "_id": 5, 
+    "endDate": "Tue May  5 00:00:00 2015", 
+    "logicId#[]": [
+      36, 
+      37, 
+      38, 
+      39, 
+      40, 
+      41, 
+      42
+    ]
+  }, 
+  {
+    "startDate": "Wed Apr 29 00:00:00 2015", 
+    "giftType": 2, 
+    "_id": 6, 
+    "endDate": "Tue May  5 00:00:00 2015", 
+    "logicId#[]": [
+      29, 
+      30, 
+      31, 
+      32, 
+      33, 
+      34, 
+      35
+    ]
+  }
+]
