@@ -5,13 +5,6 @@ import json
 import datetime
 from openpyxl import load_workbook
 
-'''
-    数组只有一个值时，以逗号（半角）结尾
-    > 2,
-    对象
-    > name:dong, age:18
-'''
-
 def parse_cell_value(value):
     if not value:
         return ''
@@ -93,7 +86,7 @@ def xlsx2json(head_row = 2):
 
 if __name__ == '__main__':
     head_row = 2
-    if len(sys.argv != 1):
+    if len(sys.argv) != 1:
         try:
             head_row = int(sys.argv[1])
         except ValueError:

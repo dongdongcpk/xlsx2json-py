@@ -1,4 +1,9 @@
 #xlsx2json-py
+##Env
+python version >= 2.7
+##Dependencies
+openpyxl (2.2.2)  
+you can install it by pip, like this: pip install openpyxl
 ##Usage
 export from excel/ to json/  
 run it:
