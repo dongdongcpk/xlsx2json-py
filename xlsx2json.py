@@ -1,6 +1,6 @@
 #coding=utf-8
 
-import os, re
+import os, re, sys
 import json
 import datetime
 from openpyxl import load_workbook
@@ -92,4 +92,11 @@ def xlsx2json(head_row = 2):
             save_json(sheet.title, json_list)
 
 if __name__ == '__main__':
-    xlsx2json()
+    head_row = 2
+    if len(sys.argv != 1):
+        try:
+            head_row = int(sys.argv[1])
+        except ValueError:
+            print 'please input head row number right, example: python xlsx2json.py 3'
+            sys.exit()
+    xlsx2json(head_row)
