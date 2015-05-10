@@ -26,5 +26,5 @@ $ python xlsx2json.py 3
 
 ##Data rule
 * use half-angle
-* if only one data in array, ending with _,_
+* if only one data in array, ending with `,`
 * you must set the cell value as a date type when you want to use the date type
