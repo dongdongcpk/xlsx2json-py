@@ -26,7 +26,7 @@ class TestPcv(unittest.TestCase):
 		c = 'FALSE'
 		self.assertTrue(isinstance(pcv(c), bool))
 
-	def test_list(self):
+	def test_array(self):
 		a = u'1,2,3,4'
 		self.assertTrue(isinstance(pcv(a), list))
 		b = u'1,'
