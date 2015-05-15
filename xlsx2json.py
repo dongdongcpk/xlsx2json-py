@@ -76,20 +76,21 @@ def save_json(file_name, json_data, dir_name = 'json'):
 
 def xlsx2json(head_row = 2):
     workbooks = get_workbooks()
-    for wb in workbooks:
-        for sheet in wb:
-            # print sheet.title
-            if sheet.rows:
-                head = sheet.rows[head_row - 1]
-    #             print head
-                json_list = []
-                for row in sheet.rows[head_row:]:
-                    row_dic = {}
-                    for head_cell, cell in zip(head, row):
-                        # print head_cell.value, cell.value, type(cell.value)
-                        row_dic[head_cell.value] = parse_cell_value(cell.value)
-                    json_list.append(row_dic)
-                save_json(sheet.title, json_list)
+    if workbooks:
+        for wb in workbooks:
+            for sheet in wb:
+                # print sheet.title
+                if sheet.rows:
+                    head = sheet.rows[head_row - 1]
+                    # print head
+                    json_list = []
+                    for row in sheet.rows[head_row:]:
+                        row_dic = {}
+                        for head_cell, cell in zip(head, row):
+                            # print head_cell.value, cell.value, type(cell.value)
+                            row_dic[head_cell.value] = parse_cell_value(cell.value)
+                        json_list.append(row_dic)
+                    save_json(sheet.title, json_list)
 
 if __name__ == '__main__':
     head_row = 2
