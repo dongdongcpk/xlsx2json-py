@@ -1,5 +1,15 @@
 [
     {
+        "hero": [
+            {
+                "id": 12, 
+                "name": "king"
+            }, 
+            {
+                "id": 20, 
+                "name": "queen"
+            }
+        ], 
         "person": {
             "age": 18, 
             "name": "dong"
@@ -17,6 +27,12 @@
         "desc": "hello"
     }, 
     {
+        "hero": [
+            {
+                "id": 7, 
+                "name": "jake"
+            }
+        ], 
         "person": {
             "id": 5
         }, 
@@ -30,6 +46,14 @@
         "desc": "你好"
     }, 
     {
+        "hero": [
+            {
+                "id": 6
+            }, 
+            {
+                "id": 28
+            }
+        ], 
         "person": {
             "max": true, 
             "min": false
@@ -45,6 +69,14 @@
         "desc": "foo"
     }, 
     {
+        "hero": [
+            {
+                "id": 777
+            }, 
+            {
+                "name": "seven"
+            }
+        ], 
         "person": {
             "level": 100
         }, 

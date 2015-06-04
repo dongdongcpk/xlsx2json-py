@@ -21,6 +21,15 @@ def parse_cell_value(value):
     if isinstance(value, datetime.datetime):
         return value.ctime()
     value = value.replace(' ', '')
+    #对象数组类型
+    if value.find(';') != -1:
+        obj_list = value.split(';')
+        parsed_list = []
+        for i in obj_list:
+            if i:
+                i = parse_cell_value(i)
+                parsed_list.append(i)
+        return parsed_list
     value_list = value.split(',')
     #对象类型
     if value.find(':') != -1:

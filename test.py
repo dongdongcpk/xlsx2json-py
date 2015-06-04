@@ -46,6 +46,15 @@ class TestPcv(unittest.TestCase):
 		self.assertEquals(parsed_a[u'age'], 18)
 		self.assertEquals(parsed_a[u'isMax'], True)
 
+	def test_obj_array(self):
+		a = u'id:12,name:king;id:20,name:queen'
+		parsed_a = pcv(a)
+		self.assertTrue(isinstance(parsed_a, list))
+		b = u'id:7,name:jake;'
+		parsed_b = pcv(b)
+		self.assertEquals(len(parsed_b), 1)
+		self.assertEquals(parsed_b[0], {u'id': 7, u'name': 'jake'})
+
 	def test_string(self):
 		a = u'foo'
 		self.assertTrue(isinstance(pcv(a), str))

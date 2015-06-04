@@ -23,10 +23,14 @@ $ python xlsx2json.py 3
 * date
 * array
 * object
+* object array
 
 ##Data rule
 * use half-angle
+* use `,` to split array data
 * if only one data in array, ending with `,`
+* use `;` to split object array data
+* if only one data in object array, ending with `;`
 
 ##Example
 ![example](https://github.com/dongdongcpk/xlsx2json-py/blob/master/example/example.png)
@@ -34,6 +38,16 @@ result:
 ```json
 [
     {
+        "hero": [
+            {
+                "id": 12, 
+                "name": "king"
+            }, 
+            {
+                "id": 20, 
+                "name": "queen"
+            }
+        ], 
         "person": {
             "age": 18, 
             "name": "dong"
@@ -51,6 +65,12 @@ result:
         "desc": "hello"
     }, 
     {
+        "hero": [
+            {
+                "id": 7, 
+                "name": "jake"
+            }
+        ], 
         "person": {
             "id": 5
         }, 
@@ -64,6 +84,14 @@ result:
         "desc": "你好"
     }, 
     {
+        "hero": [
+            {
+                "id": 6
+            }, 
+            {
+                "id": 28
+            }
+        ], 
         "person": {
             "max": true, 
             "min": false
@@ -79,6 +107,14 @@ result:
         "desc": "foo"
     }, 
     {
+        "hero": [
+            {
+                "id": 777
+            }, 
+            {
+                "name": "seven"
+            }
+        ], 
         "person": {
             "level": 100
         }, 
