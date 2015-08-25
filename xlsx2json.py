@@ -9,14 +9,14 @@ def parse_cell_value(value):
     #布尔类型
     if isinstance(value, bool):
         return value
-    if not value:
-        return ''
     #int类型
     if isinstance(value, int):
         return value
     #float类型
     if isinstance(value, float):
         return value
+    if not value:
+        return ''
     #日期类型
     if isinstance(value, datetime.datetime):
         return value.ctime()
